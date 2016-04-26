@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="caiwu" extends="struts-default" namespace="/caiwu">
+
+		<action name="caiwu" class="controller.Caiwu">
+			<result name="toCaiwu">/caiwu.jsp</result>
+		</action>
+
+		<action name="fromcaiwu_tocangku" class="controller.FromCaiwuToCangku">
+			<result name="fromcaiwu_tocangku" type="redirectAction">
+				<param name="namespace">/cangku</param>
+				<param name="actionName">caiwu?id=${id}</param>
+			</result>
+		</action>
+
+	</package>
+
+</struts>

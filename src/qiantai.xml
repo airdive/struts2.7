@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="qiantai" extends="struts-default" namespace="/qiantai">
+
+		<action name="qiantai" class="controller.Qiantai">
+			<result name="toQiantai">/qiantai.jsp</result>
+		</action>
+
+	</package>
+
+</struts>
